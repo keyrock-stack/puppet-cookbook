@@ -1,1 +1,4 @@
-node default {  include base}
+node default {
+  include base
+  include puppet
+}

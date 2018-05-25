@@ -1,0 +1,10 @@
+cd /etc/puppet/cookbook; sudo git fetch --all ; sudo git reset --hard origin/master ;sudo puppet apply /etc/puppet/cookbook/manifests/site.pp --modulepath /etc/puppet/cookbook/modules
+
+cd /etc/puppet/cookbook; sudo git fetch --all ; sudo git reset --hard origin/master ;sudo puppet apply /etc/puppet/cookbook/manifests/site.pp --modulepath /etc/puppet/cookbook/modules
+
+# 
+   cd ~/.ssh
+   ssh-keygen -b 4096 -f git_rsa
+   #ssh-copy-id -i git_rsa git@git.example.com
+   ssh-copy-id -i git_rsa git@yow-lkwan-git
+

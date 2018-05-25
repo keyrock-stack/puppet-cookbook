@@ -36,7 +36,12 @@
 # Copyright 2018 Your name here, unless otherwise noted.
 #
 class base {
-  file {'/etc/motd':
-    content => "${::fqdn}\nManaged by puppet ${::puppetversion}\n"  
+  $mysql_password = 'secret'
+  file {'/etc/motddd':
+    content => "${::fqdn}\nManaged by puppet... ${::puppetversion}\n"
+  }
+  file {'/etc/erb':
+    content =>  template('admin/a.sh.erb'),
+    mode => '0755',
   }
 }

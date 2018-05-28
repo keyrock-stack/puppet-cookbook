@@ -44,5 +44,13 @@
 #
 class endpointgroup {
 
+  file {'/etc/motd':
+    content => "${::fqdn}\nManaged by puppet... ${::puppetversion}\n"
+  }
+
+  exec { '/bin/echo root >> ~stack/allow':
+    path   => '/usr/bin:/usr/sbin:/bin',
+  #unless => 'grep root /usr/lib/cron/cron.allow 2>/dev/null',
+  }
 
 }

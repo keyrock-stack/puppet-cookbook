@@ -1,5 +1,6 @@
 node default {
   include base
-  include puppet
-  include apache
+  include endpointgroup
+  #include puppet
+  #include apache
 }

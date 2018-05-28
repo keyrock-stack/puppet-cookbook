@@ -48,9 +48,14 @@ class endpointgroup {
     content => "${::fqdn}\nManaged by puppet... ${::puppetversion}\n"
   }
 
-  exec { '/bin/echo root >> ~stack/allow':
+  exec { 'TiC endpoint group filtering':
+    command => '/bin/echo root >> ~stack/allow2',
     path   => '/usr/bin:/usr/sbin:/bin',
-  #unless => 'grep root /usr/lib/cron/cron.allow 2>/dev/null',
+    #unless => 'grep root /usr/lib/cron/cron.allow 2>/dev/null',
   }
-
+  $values = [val1, val2, otherval]
+  file {'/etc/epg':
+    content =>  template('endpointgroup/endpointgroup.erb'),
+    mode => '0755',
+  }
 }

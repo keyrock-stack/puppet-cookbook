@@ -1,0 +1,2 @@
+#puppet module generate "user-module" --skip-interview
+puppet module generate "lkwan-endpointgroup" --skip-interview

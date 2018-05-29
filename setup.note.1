@@ -1,17 +1,15 @@
 #
-
 git clone git@yow-lkwan-git:repos/puppet.git
-
 #
 cd /etc/puppet/cookbook; sudo git fetch --all ; sudo git reset --hard origin/master ;sudo puppet apply /etc/puppet/cookbook/manifests/site.pp --modulepath /etc/puppet/cookbook/modules
-
 cd /etc/puppet/cookbook; sudo git fetch --all ; sudo git reset --hard origin/master ;sudo puppet apply /etc/puppet/cookbook/manifests/site.pp --modulepath /etc/puppet/cookbook/modules
-
 # 
    cd ~/.ssh
    ssh-keygen -b 4096 -f git_rsa
    #ssh-copy-id -i git_rsa git@git.example.com
    ssh-copy-id -i git_rsa git@yow-lkwan-git
-
 #
 sudo puppet apply ./manifests/site.pp   --modulepath ./modules
+# Tic Puppet tools
+puppet parser validate /usr/share/puppet/modules/sysinv/manifests/api.pp
+/usr/local/bin/puppet-manifest-apply.sh /opt/platform/puppet/18.01/hieradata 192.168.204.3 controller

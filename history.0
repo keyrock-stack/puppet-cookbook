@@ -1,0 +1,262 @@
+    1  mkdir .cache
+    2  git config --global core.editor "vim"
+    3  ls
+    4  git clone https://github.com/keyrock-stack/devstack.env.git
+    5  cd devstack.env/
+    6  ls
+    7  ./1.git.setup.sh 
+    8  cd
+    9  cd devstack
+   10  ls
+   11  ifconfig
+   12  /sbin/ifconfig
+   13  vi local.conf 
+   14  ./stack.sh 
+   15  env | grep -i project
+   16  cd
+   17  ls
+   18  cp devstack.env/admin-openrc.sh  .
+   19  vi admin-openrc.sh 
+   20  ifconfig
+   21  /sbin/ifconfig
+   22  vi admin-openrc.sh 
+   23  source admin-openrc.sh 
+   24  nova list
+   25  clear
+   26  nova list
+   27  openstack user list
+   28  clar
+   29  ls
+   30  pwd
+   31  ls
+   32  git clone https://github.com/keyrock-stack/devstack.env.git
+   33  cd devstack.env/
+   34  git pull
+   35  ls -alt
+   36  cd EndPointGroup/
+   37  ls
+   38  less endpoint.steps 
+   39  ls
+   40  cat endpoint.steps 
+   41  clear
+   42  openstack catalog list
+   43  openstack region remove region1
+   44  source ~/admin-openrc.sh 
+   45  openstack region remove region1
+   46  openstack region delete region1
+   47  chmod a+rx *.sh
+   48  ls
+   49  ./0.endpoint.sh 
+   50  history
+   51  cat 0.endpoint.sh 
+   52  openstack region delete region1
+   53* 
+   54  openstack endpoint list  --region region1 
+   55  openstack endpoint list  --region region1 | grep region1
+   56  openstack endpoint list  --region region1 | grep region1| awk '{print $2}'
+   57  openstack endpoint delete 6c11d79d3e2e471fa9220013be48d5a3 74c47d110e19432dacaf8a9dc924e97e b213612354644e82a6f6b206c5d2b0f9 ebb493bcb73b4302b7afe107ee9cbd1a
+   58  openstack endpoint create
+   59  clear
+   60  openstack endpoint create
+   61  openstack endpoint list | grep keystone
+   62  openstack endpoint list | grep glance
+   63  openstack endpoint list | grep ceil
+   64  openstack endpoint list | grep cei
+   65  openstack endpoint list | grep nova
+   66  openstack endpoint list --regionopenstack endpoint list --region region1| grep nova
+   67  openstack endpoint list --region region1
+   68  openstack endpoint list --region SystemController
+   69  openstack endpoint list
+   70  openstack endpoint list| grep glance
+   71  openstack endpoint list| grep nova
+   72  ls
+   73  cd
+   74  ls
+   75  git clone https://github.com/keyrock-stack/puppet-cookbook.git
+   76  ls
+   77  cd puppet-cookbook/
+   78  ls
+   79  pwd
+   80  cd modules/
+   81  ls
+   82  cd ..
+   83  ls
+   84  puppet module generate endpoint-group
+   85  ls
+   86  cd modules/
+   87  ls
+   88  cd ..
+   89  ls -alt
+   90  cd group/
+   91  ls
+   92  cd ..
+   93  rm -rf group
+   94  ls
+   95  cd modules/
+   96  ls
+   97  puppet module generate endpoint-group
+   98  history
+   99  puppet module generate "endpoint-group"
+  100  puppet help  module generate
+  101  puppet module generate "endpoint-group" --skip-interview
+  102  puppet module generate "endpointgroup" --skip-interview
+  103  puppet module generate "lkwan-endpointgroup" --skip-interview
+  104  ls
+  105  rm -rf group
+  106  ls -alt
+  107  history
+  108  ls -alt
+  109  cd endpointgroup/
+  110  ls
+  111  grep lkwan 
+  112  grep lkwan  *
+  113  cd ..
+  114  ls
+  115  puppet module generate "Louie-endpointgroup" --skip-interview
+  116  puppet module generate "Louie-endpointgroup2" --skip-interview
+  117  cd endpointgroup2
+  118  grep -r Louie
+  119  cd ..
+  120  rm -rf endpointgroup
+  121  rm -rf endpointgroup2
+  122  history
+  123  puppet module generate "lkwan-endpointgroup" --skip-interview
+  124  ls
+  125  vi create.module.info
+  126  history |grep push
+  127  git add --all; git commit -m "v1.1" ; git push
+  128  ls
+  129  cd endpointgroup/
+  130  ls
+  131  vi manifests/
+  132  ls
+  133  mkdir templates
+  134  cd templates/
+  135  vi endpointgroup.erb
+  136  cat endpointgroup.erb 
+  137  clear
+  138  cd ..
+  139  ls
+  140  cd manifests/
+  141  ls
+  142  cat init.pp 
+  143  q!
+  144  cd ..
+  145  ls
+  146  openstack project list
+  147  openstack endpoint list
+  148  ls
+  149  cd ..
+  150  grep -r exec
+  151  ls
+  152  vi endpointgroup/
+  153  vi endpointgroup/manifests/init.pp 
+  154  sudo puppet apply ~/puppet-cookbook/modules/endpointgroup/manifests/init.pp 
+  155  vi ~/puppet-cookbook/modules/endpointgroup/manifests/init.pp 
+  156  sudo puppet apply ~/puppet-cookbook/modules/endpointgroup/manifests/init.pp 
+  157  vi ~/puppet-cookbook/modules/endpointgroup/manifests/init.pp 
+  158  man test
+  159  !
+  160  cat ~/puppet-cookbook/modules/endpointgroup/manifests/init.pp 
+  161  q!
+  162  test -d /tmp
+  163  test -d /tmp/
+  164  test -d /tmp/ ; echo $status
+  165  test -d /tmpa/ ; echo $status
+  166  man test
+  167  test -d /tmpa/ 
+  168  ls /tmpa
+  169  test -d /tmpa/ 
+  170  test -d /tmpa/; echo $status
+  171  test -d /tmpa/; echo $?
+  172  test -d /tmp/; echo $?
+  173  sudo puppet apply ~/puppet-cookbook/modules/endpointgroup/manifests/init.pp 
+  174  vi ~/puppet-cookbook/modules/endpointgroup/manifests/init.pp 
+  175  sudo puppet apply ~/puppet-cookbook/modules/endpointgroup/manifests/init.pp 
+  176  cat /tmp/end*
+  177  vi ~/puppet-cookbook/modules/endpointgroup/manifests/init.pp 
+  178  cat /tmp/endpointgroup-exec
+  179  cat /tmp/endpointgroup-execa
+  180  vi ~/puppet-cookbook/modules/endpointgroup/manifests/init.pp 
+  181  sudo puppet apply ~/puppet-cookbook/modules/endpointgroup/manifests/init.pp 
+  182  cat /tmp/endpointgroup-execa
+  183  cat /tmp/endpointgroup-exec
+  184  sudo puppet apply ~/puppet-cookbook/modules/endpointgroup/manifests/init.pp  --debug
+  185  vi ~/puppet-cookbook/modules/endpointgroup/manifests/init.pp 
+  186  sudo puppet apply ~/puppet-cookbook/modules/endpointgroup/manifests/init.pp  --debug
+  187  cd /tmp
+  188  ls
+  189  ls -alt /tmp
+  190  date
+  191  ls
+  192  vi ~/puppet-cookbook/modules/endpointgroup/manifests/init.pp 
+  193  sudo puppet apply ~/puppet-cookbook/modules/endpointgroup/manifests/init.pp  --debug
+  194  sudo puppet apply ~/puppet-cookbook/modules/endpointgroup/manifests/init.pp 
+  195  ls
+  196  cd
+  197  ls
+  198  sudo puppet apply ~/puppet-cookbook/modules/endpointgroup/manifests/init.pp 
+  199  cat ~/puppet-cookbook/modules/endpointgroup/manifests/init.pp 
+  200  /bin/echo root >> ~stack/allow
+  201  ls
+  202  cat allow
+  203  rm allow
+  204  sudo puppet apply ~/puppet-cookbook/modules/endpointgroup/manifests/init.pp 
+  205  ls
+  206  grep root /usr/lib/cron/cron.allow
+  207  vi ~/puppet-cookbook/modules/endpointgroup/manifests/init.pp 
+  208  sudo puppet apply ~/puppet-cookbook/modules/endpointgroup/manifests/init.pp 
+  209  ls
+  210  chmod a+rwx .
+  211  sudo puppet apply ~/puppet-cookbook/modules/endpointgroup/manifests/init.pp 
+  212  ls
+  213  vi ~/puppet-cookbook/modules/endpointgroup/manifests/init.pp 
+  214  sudo puppet apply -l ~/puppet-cookbook/modules/endpointgroup/manifests/init.pp 
+  215  ls /etc/mo*
+  216  ls /etc/motd
+  217  vi ~/puppet-cookbook/modules/endpointgroup/manifests/init.pp 
+  218  ls
+  219  cd puppet-cookbook/
+  220  ls
+  221  vi manifests/
+  222  vi manifests/site.pp 
+  223  puppet apply ./manifests/site.pp   --modulepath ~/puppet-cookbook/modules
+  224  sudo puppet apply ./manifests/site.pp   --modulepath ~/puppet-cookbook/modules
+  225  ls /etc/motddd 
+  226  rm -rf /etc/motddd 
+  227  sudo rm  /etc/motddd 
+  228  ls /etc/motddd 
+  229  ls
+  230  history
+  231  cat ./modules/lkwan-base/manifests/init.pp 
+  232  ls /etc/erb
+  233  cat /etc/erb
+  234  history
+  235  git status
+  236  vi manifests/site.pp 
+  237  history
+  238  sudo puppet apply ./manifests/site.pp   --modulepath ./modules
+  239  cat /etc/motd
+  240  history
+  241  ls
+  242  vi setup.note.1 
+  243  vi puppet.apply.sh
+  244  chmod a+x puppet.apply.sh 
+  245  ./puppet.apply.sh 
+  246  cat ~stack/allow 
+  247  history |grep add
+  248  git add --all; git commit -m "v1.1" ; git push
+  249  nova list
+  250  ls
+  251  history
+  252  sudo puppet apply ./manifests/site.pp   --modulepath ./modules
+  253  cat ~/allow2
+  254  sudo puppet apply ./manifests/site.pp   --modulepath ./modules
+  255  git status
+  256  history
+  257  history| grep add
+  258  git add --all; git commit -m "v1.1" ; git push
+  259  sudo puppet apply ./manifests/site.pp   --modulepath ./modules
+  260  pwd
+  261  history
+  262  history > history.0

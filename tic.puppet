@@ -1,0 +1,57 @@
+#
+sudo /usr/local/bin/puppet-manifest-apply.sh /opt/platform/puppet/18.04/hieradata 192.168.204.4 controller
+/usr/share/openstack-puppet/modules
+[root@controller-1 modules(keystone_admin)]# !vi
+vi keystone/manifests/service.pp
+[root@controller-1 modules(keystone_admin)]# pwd
+/usr/share/openstack-puppet/modules
+
+
+/var/log/puppet/2018-05-29-19-27-16_keystone/puppet.log
+
+/etc/puppet/manifests/keystone2.pp
+
+/etc/puppet/hieradata
+[wrsroot@controller-1 hieradata(keystone_admin)]$ ls
+compute.yaml  controller.yaml  global.yaml  keystone2.yaml  storage.yaml
+
+
+#
+#
+#
+k./usr/share/doc/puppet-4.8.2/examples/hiera/modules/ntp/templates
+./usr/share/ruby/vendor_ruby/puppet/vendor/rgen/test/template_language_test/templates
+./usr/share/ruby/vendor_ruby/puppet/vendor/rgen/lib/mmgen/templates
+./usr/share/ruby/vendor_ruby/puppet/generate/templates
+./usr/share/ruby/vendor_ruby/puppet/module_tool/skeleton/templates
+./usr/share/openstack-puppet/modules/kmod/templates
+./usr/share/openstack-puppet/modules/rsync/templates
+./usr/share/openstack-puppet/modules/horizon/templates
+./usr/share/openstack-puppet/modules/vlan/templates
+./usr/share/openstack-puppet/modules/memcached/templates
+./usr/share/openstack-puppet/modules/haproxy/templates
+./usr/share/openstack-puppet/modules/ceilometer/templates
+./usr/share/openstack-puppet/modules/keystone/templates
+./usr/share/openstack-puppet/modules/ironic/templates
+./usr/share/openstack-puppet/modules/swift/templates
+./usr/share/openstack-puppet/modules/mysql/templates
+./usr/share/openstack-puppet/modules/rabbitmq/templates
+./usr/share/openstack-puppet/modules/apache/templates
+./usr/share/openstack-puppet/modules/xinetd/templates
+./usr/share/openstack-puppet/modules/neutron/templates
+./usr/share/openstack-puppet/modules/openstacklib/templates
+./usr/share/openstack-puppet/modules/nova/templates
+./usr/share/openstack-puppet/modules/murano/templates
+./usr/share/puppet/modules/nslcd/templates
+./usr/share/puppet/modules/network/templates
+./usr/share/puppet/modules/network/spec/fixtures/modules/network/templates
+./usr/share/puppet/modules/openstack/templates
+./usr/share/puppet/modules/mtce/templates
+./usr/share/puppet/modules/dnsmasq/templates
+./usr/share/puppet/modules/sshd/templates
+./usr/share/puppet/modules/platform/templates
+./usr/share/puppet/modules/postgresql/templates
+./usr/share/puppet/modules/puppi/templates
+./usr/share/puppet/modules/ldap/templates
+./usr/share/puppet/modules/drbd/templates
+

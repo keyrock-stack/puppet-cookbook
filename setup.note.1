@@ -12,4 +12,4 @@ cd /etc/puppet/cookbook; sudo git fetch --all ; sudo git reset --hard origin/mas
 sudo puppet apply ./manifests/site.pp   --modulepath ./modules
 # Tic Puppet tools
 puppet parser validate /usr/share/puppet/modules/sysinv/manifests/api.pp
-/usr/local/bin/puppet-manifest-apply.sh /opt/platform/puppet/18.01/hieradata 192.168.204.3 controller
+/usr/local/bin/puppet-manifest-apply.sh /opt/platform/puppet/18.04/hieradata 192.168.204.3 controller

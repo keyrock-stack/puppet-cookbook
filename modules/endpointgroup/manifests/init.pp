@@ -43,13 +43,17 @@
 # Copyright 2018 Your name here, unless otherwise noted.
 #
 class endpointgroup {
-
   file {'/etc/motd':
     content => "${::fqdn}\nManaged by puppet... ${::puppetversion}\n"
   }
-
+  exec { 'openstack endpoint list':
+        #command     => '/usr/local/bin/openstack endpoint list > ~stack/abcdefg',
+        command     => '/bin/ping -c 2 cnn.com > ~stack/abcdefg',
+        path        => '/usr/local/bin:/bin',
+        #user        => $keystone_user, #refreshonly => true, #creates     => $signing_keyfile, #notify      => Anchor['keystone::service::begin'], #subscribe   => [Anchor['keystone::install::end'], Anchor['keystone::config::end']], #tag         => 'keystone-exec',
+  }
   exec { 'TiC endpoint group filtering':
-    command => '/bin/echo root >> ~stack/allow2',
+    command => '/bin/echo root >> ~stack/allow4',
     path   => '/usr/bin:/usr/sbin:/bin',
     #unless => 'grep root /usr/lib/cron/cron.allow 2>/dev/null',
   }

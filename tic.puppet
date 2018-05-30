@@ -1,9 +1,17 @@
-
+#
 #
 export INITIAL_CONFIG_PRIMARY=true
 #
 sudo /usr/local/bin/puppet-manifest-apply.sh /opt/platform/puppet/18.04/hieradata 192.168.204.4 controller
+#
+grep -r os-auth-url /usr/share/openstack-puppet/modules
+#
 /usr/share/openstack-puppet/modules
+#
+# Tool
+puppet parser validate  /usr/share/openstack-puppet/modules/keystone/manifests/service.pp
+#
+#
 [root@controller-1 modules(keystone_admin)]# !vi
 vi keystone/manifests/service.pp
 [root@controller-1 modules(keystone_admin)]# pwd

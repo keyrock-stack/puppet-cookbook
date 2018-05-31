@@ -10,6 +10,8 @@ grep -r os-auth-url /usr/share/openstack-puppet/modules
 #
 # Tool
 puppet parser validate  /usr/share/openstack-puppet/modules/keystone/manifests/service.pp
+puppet parser validate  /usr/share/puppet/modules/sysinv/manifests/api.pp
+
 #
 #
 [root@controller-1 modules(keystone_admin)]# !vi

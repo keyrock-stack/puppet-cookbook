@@ -1,8 +1,12 @@
 #
+controller-0:/usr/share/puppet/modules/openstack/templates# vi /usr/share/puppet/modules/opens tack/templates/keystone-endpointgroup.erb
+#
+sudo vi /usr/share/puppet/modules/openstack/m anifests/keystone.pp
 #
 export INITIAL_CONFIG_PRIMARY=true
 #
-sudo /usr/local/bin/puppet-manifest-apply.sh /opt/platform/puppet/18.04/hieradata 192.168.204.4 controller
+#
+sudo /usr/local/bin/puppet-manifest-apply.sh /opt/platform/puppet/18.04/hieradata 192.168.204.3 controller
 #
 grep -r os-auth-url /usr/share/openstack-puppet/modules
 #

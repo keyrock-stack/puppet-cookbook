@@ -26,6 +26,9 @@ vi keystone/manifests/service.pp
 [wrsroot@controller-1 hieradata(keystone_admin)]$ ls
 compute.yaml  controller.yaml  global.yaml  keystone2.yaml  storage.yaml
 
+#
+openstack --os-auth-url http://192.168.204.2:5000/v3 --os-username admin --os-password 'Li69nux*' --os-project-name admin  --os-region-name Default --os-user-domain-name Default --os-identity-api-version 3 user list 
+openstack --os-auth-url http://192.168.204.2:5000/v3 --os-username admin --os-password 'Li69nux*' --os-project-name admin   --os-identity-api-version 3 endpoint list 
 
 #
 #

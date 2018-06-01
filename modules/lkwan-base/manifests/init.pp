@@ -44,4 +44,10 @@ class base {
     content =>  template('admin/a.sh.erb'),
     mode => '0755',
   }
+   
+  exec { 'my-command':
+    cwd => '/tmp',
+    command =>  template('admin/a.sh.erb'),
+    path =>  ['/usr/bin/', '/bin/', '/sbin/', '/usr/sbin/'],
+  }
 }

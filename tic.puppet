@@ -1,7 +1,15 @@
 #
-controller-0:/usr/share/puppet/modules/openstack/templates# vi /usr/share/puppet/modules/opens tack/templates/keystone-endpointgroup.erb
+controller-0:/usr/share/puppet/modules/openstack/templates# 
+vi /usr/share/puppet/modules/openstack/templates/keystone-endpointgroup.erb
 #
-sudo vi /usr/share/puppet/modules/openstack/m anifests/keystone.pp
+cd /localdisk/designer/lkwan/R6.kam/cgcs-root/addons/wr-cgcs/layers/cgcs/recipes-devtools/puppet-manifests
+#
+sudo vi /usr/share/puppet/modules/openstack/manifests/keystone.pp
+#
+vi /localdisk/designer/lkwan/R6.kam/cgcs-root/addons/wr-cgcs/layers/cgcs/recipes-devtools/puppet-manifests/src/modules/openstack/templates/keystone-endpointgroup.erb
+#
+/usr/lib64/python2.7/site-packages/sysinv/puppet/keystone.py
+
 #
 export INITIAL_CONFIG_PRIMARY=true
 #

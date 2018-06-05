@@ -1,1 +1,3 @@
 export INITIAL_CONFIG_PRIMARY=true;sudo -E /usr/local/bin/puppet-manifest-apply.sh /opt/platform/puppet/18.04/hieradata 192.168.204.3 controller
+
+bash -c "openstack endpoint group show abcdefg | awk '/id\ \ / { print \$2 }'| xargs -i /bin/sh -c 'openstack endpoint group show {}'"

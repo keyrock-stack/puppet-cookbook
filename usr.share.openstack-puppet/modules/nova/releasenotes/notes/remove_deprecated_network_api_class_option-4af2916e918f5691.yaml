@@ -1,4 +1,0 @@
----
-deprecations:
-  - The deprecated ``network_api_class`` config option has been
-    removed.

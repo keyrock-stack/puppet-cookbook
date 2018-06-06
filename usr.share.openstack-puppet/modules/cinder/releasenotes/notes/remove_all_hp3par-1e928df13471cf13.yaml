@@ -1,5 +1,0 @@
----
-deprecations:
-  - Remove hp3par_iscsi define and class.
-  - Remove all hp3par parameters in define and class.
-  - Remove all tests related to hp3par.

@@ -1,4 +1,0 @@
----
-other:
-  - Replace cinder quota-set cli for class with openstack cli quota,
-    It uses --class option to exec resources class quota.

@@ -1,6 +1,0 @@
----
-features:
-  - |
-    Expose the ``discover_hosts_in_cells_interval`` option in the scheduler
-    manifest. Changing this option is needed for bare metal clouds starting
-    with the Ocata release.

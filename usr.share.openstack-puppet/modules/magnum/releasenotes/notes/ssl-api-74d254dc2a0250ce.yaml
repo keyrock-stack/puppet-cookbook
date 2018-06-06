@@ -1,3 +1,0 @@
----
-features:
-  - magnum::api now supports SSL parameters to secure the API endpoint

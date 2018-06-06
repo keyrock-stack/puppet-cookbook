@@ -1,5 +1,0 @@
----
-features:
-  - One can now create a keystone service user and configure the authtoken
-    settings for the novajoin vendordata plugin via its own auth and authtoken
-    manifests.

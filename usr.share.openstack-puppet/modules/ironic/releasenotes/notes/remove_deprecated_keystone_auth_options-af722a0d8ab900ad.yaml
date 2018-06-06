@@ -1,3 +1,0 @@
----
-other:
-  - Removed deprecated options for ironic::keystone::auth class.

@@ -1,3 +1,0 @@
----
-fixes:
-  - issue with python-ldappool and python-ldap uninstalling each other each run.

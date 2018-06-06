@@ -1,3 +1,0 @@
----
-fixes:
-  - Set the default log facility to LOCAL2 for all services.

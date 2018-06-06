@@ -1,5 +1,0 @@
----
-deprecations:
-  - |
-    Deprecated ``ironic::drivers::deploy`` manifest, use parameters from
-    ``ironic::conductor`` instead.

@@ -1,4 +1,0 @@
----
-fixes:
-  - Install python-redis if the coordination backend url is redis. This is
-    an indirect dependency on evaluator coordination to work.

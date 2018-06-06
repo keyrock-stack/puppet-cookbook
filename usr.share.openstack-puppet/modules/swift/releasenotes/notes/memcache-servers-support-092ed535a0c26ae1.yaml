@@ -1,3 +1,0 @@
----
-features:
-  - memcache_servers support in object-expirer and container-reconciler

@@ -1,4 +1,0 @@
----
-features:
-  - Allow configuring Swift temporary URL parameters for fetching images
-    from Glance. Required for certain drivers.

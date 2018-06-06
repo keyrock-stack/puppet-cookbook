@@ -1,4 +1,0 @@
----
-deprecations:
-  - The "enable_setting_ipmi_credentials" ironic-inspector option was
-    deprecated.

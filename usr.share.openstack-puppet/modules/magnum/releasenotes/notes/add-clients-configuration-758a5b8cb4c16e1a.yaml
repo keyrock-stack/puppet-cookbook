@@ -1,4 +1,0 @@
----
-features:
-  - A new class magnum::clients have been added to configure the OpenStack
-    service clients used by magnum service.

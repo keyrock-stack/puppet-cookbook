@@ -1,4 +1,0 @@
----
-features:
-  - Adds support for host config for OVS when used with
-    OpenDaylight pseudo-agent port binding.

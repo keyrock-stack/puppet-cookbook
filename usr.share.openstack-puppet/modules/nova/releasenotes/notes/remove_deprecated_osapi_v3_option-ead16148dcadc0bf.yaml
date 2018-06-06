@@ -1,4 +1,0 @@
----
-deprecations:
-  - previously deprecated config option '''osapi_v3'''
-    to be removed, as it was never used in code.

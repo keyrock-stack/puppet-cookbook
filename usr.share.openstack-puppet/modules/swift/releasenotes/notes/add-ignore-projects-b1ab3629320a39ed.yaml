@@ -1,3 +1,0 @@
----
-fixes:
-    - Add ignore projects setting to filter:ceilometer in proxy server config.

@@ -1,4 +1,0 @@
----
-features:
-  - Stop managing /etc/ironic and /etc/ironic/ironic.conf since they
-    should already be managed by packaging.

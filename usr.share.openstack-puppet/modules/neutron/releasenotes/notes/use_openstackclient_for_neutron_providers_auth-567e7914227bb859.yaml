@@ -1,5 +1,0 @@
----
-features:
-  - Added Openstack Client for Neutron providers.
-    It will help to add new provider classes for 
-    puppet Neutron module.

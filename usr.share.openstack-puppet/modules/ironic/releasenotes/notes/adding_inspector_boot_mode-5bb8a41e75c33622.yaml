@@ -1,4 +1,0 @@
----
-features:
-      - Add "ironic::inspector::detect_boot_mode" parameter to configure
-             whether to store the boot mode (BIOS or UEFI).

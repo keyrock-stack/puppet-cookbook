@@ -1,4 +1,0 @@
----
-deprecations:
-  - aodh::rpc_backend is deprecated and will be removed in a future
-    release. Please use aodh::default_transport_url instead.

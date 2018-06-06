@@ -1,4 +1,0 @@
----
-deprecations:
-  - nova::rpc_backend is deprecated and will be removed in a future
-    release. Please use nova::default_transport_url instead.

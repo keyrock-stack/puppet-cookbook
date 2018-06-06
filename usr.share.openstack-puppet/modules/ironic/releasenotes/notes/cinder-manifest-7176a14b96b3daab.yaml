@@ -1,4 +1,0 @@
----
-features:
-  - |
-    New manifest "ironic::cinder" to set parameters for connecting to cinder.

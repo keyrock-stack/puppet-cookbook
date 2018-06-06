@@ -1,4 +1,0 @@
----
-deprecations:
-  - nova::cert is deprecated and will be removed in Queens.
-    Nova removed the cert daemon during Pike cycle.

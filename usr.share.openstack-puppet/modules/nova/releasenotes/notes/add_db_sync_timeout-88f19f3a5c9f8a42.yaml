@@ -1,3 +1,0 @@
----
-features:
-  - Adds db_sync_timeout parameter to nova db sync and nova db sync_api

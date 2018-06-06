@@ -1,4 +1,0 @@
----
-features:
-  - Added configuration option to allow configuring a user trust for clusters
-    which can be accessed at magnum::keystone::domain::cluster_user_trust

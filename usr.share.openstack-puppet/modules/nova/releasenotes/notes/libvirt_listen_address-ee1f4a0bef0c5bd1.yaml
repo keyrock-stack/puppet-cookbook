@@ -1,4 +1,0 @@
----
-features:
-  - Add a new parameter, "nova::migration::libvirt::listen_address", to control
-    the address/interface that libvirtd binds to.

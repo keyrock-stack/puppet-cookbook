@@ -1,3 +1,0 @@
----
-deprecations:
-    - Removing min_l3_agents_per_router which was deprecated in newton.

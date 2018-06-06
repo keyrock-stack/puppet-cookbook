@@ -1,4 +1,0 @@
----
-deprecations:
-  - Deprecate store_events option.
-    This option has been removed from ceilometer since Newton.

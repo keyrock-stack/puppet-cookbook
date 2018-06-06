@@ -1,5 +1,0 @@
----
-features:
-  - Federation mellon support Web Single Sign-On (SSO)
-    When configuring federation using mellon enable setup of Web Single
-    Sign-On.

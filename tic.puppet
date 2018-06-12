@@ -1,4 +1,9 @@
 #
+command => "sm-configure service_instance keystone keystone \"config=/etc/keystone/keystone.conf,user=root,os_username=${os_username},os_project_name=${os_project_name},os_user_domain_name=${os_user_domain_name},os_project_domain_name=${os_project_domain_name},os_auth_url=${os_auth_url}, \"",
+#
+#
+#
+#
 controller-0:/usr/share/puppet/modules/openstack/templates# 
 vi /usr/share/puppet/modules/openstack/templates/keystone-endpointgroup.erb
 #
@@ -45,6 +50,8 @@ openstack --os-auth-url http://192.168.204.2:5000/v3 --os-username admin --os-pa
 openstack --os-auth-url http://192.168.204.2:5000/v3 --os-username admin --os-password 'Li69nux*' --os-project-name admin   --os-identity-api-version 3 endpoint list 
 
 #
+command => "sm-configure service_instance keystone keystone \"config=/etc/keystone/keystone.conf,user=root,os_username=${os_username},os_project_name=${os_project_name},os_user_domain_name=${os_user_domain_name},os_project_domain_name=${os_project_domain_name},os_auth_url=${os_auth_url}, \"",
+
 #
 #
 k./usr/share/doc/puppet-4.8.2/examples/hiera/modules/ntp/templates
